@@ -36,42 +36,14 @@ class Register {
         return cy.get('p[class="alert alert-danger"]')
     }
 
-    populateFirstName(firstName) {
-        this.firstNameInput.type(firstName);
-    }
-
-    populateLastName(lastName) {
-        this.lastNameInput.type(lastName);
-    }
-
-    populateEmail(email) {
-        this.emailInput.type(email);
-    }
-
-    populatePassword(password) {
-        this.passwordInput.type(password);
-    }
-
-    populateConfirmedPassword(confirmPassword) {
-        this.confirmPasswordInput.type(confirmPassword);
-    }
-
-    markTermsCheckbox() {
-        this.termsCheckbox.check();
-    }
-
-    clickSubmitButton() {
-        this.registerSubmitButton.click();
-    }
-
     userRegistration(firstName, lastName, email, password) {
         this.firstNameInput.type(firstName);
         this.lastNameInput.type(lastName);
         this.emailInput.type(email);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(password);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationWithoutFirstName(lastName, email, password) {
@@ -79,8 +51,8 @@ class Register {
         this.emailInput.type(email);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(password);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationWithoutLastName(firstName, email, password) {
@@ -88,8 +60,8 @@ class Register {
         this.emailInput.type(email);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(password);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationWithoutEmail(firstName, lastName, password) {
@@ -97,8 +69,8 @@ class Register {
         this.lastNameInput.type(lastName);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(password);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationInvalidEmail(firstName, lastName, email, password) {
@@ -107,8 +79,8 @@ class Register {
         this.emailInput.type(email);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(password);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationWithoutPassword(firstName, lastName, email, confirmPassword) {
@@ -116,8 +88,8 @@ class Register {
         this.lastNameInput.type(lastName);
         this.emailInput.type(email);
         this.confirmPasswordInput.type(confirmPassword);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationWithoutConfirmPassword(firstName, lastName, email, password) {
@@ -125,8 +97,8 @@ class Register {
         this.lastNameInput.type(lastName);
         this.emailInput.type(email);
         this.passwordInput.type(password);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationPasswordNotMatching(firstName, lastName, email, password, confirmPassword) {
@@ -135,8 +107,8 @@ class Register {
         this.emailInput.type(email);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(confirmPassword);
-        this.markTermsCheckbox();
-        this.clickSubmitButton();
+        this.termsCheckbox.check();
+        this.registerSubmitButton.click();
     }
 
     userRegistrationTermsNotAccepted(firstName, lastName, email, password) {
@@ -145,7 +117,7 @@ class Register {
         this.emailInput.type(email);
         this.passwordInput.type(password);
         this.confirmPasswordInput.type(password);
-        this.clickSubmitButton();
+        this.registerSubmitButton.click();
     }
 }
 
