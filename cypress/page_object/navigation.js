@@ -12,6 +12,14 @@ class Navigation {
         return cy.get('a[class="nav-link nav-buttons"]').last();
     }
 
+    get allGallerysButton() {
+        return cy.get('a[href="/"]')
+    }
+
+    clickAllGalleriesButton() {
+        this.allGallerysButton.click();
+    }
+
     clickLoginButton() {
         this.loginButton.click();
     }

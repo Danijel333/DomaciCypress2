@@ -73,6 +73,80 @@ class Register {
         this.markTermsCheckbox();
         this.clickSubmitButton();
     }
+
+    userRegistrationWithoutFirstName(lastName, email, password) {
+        this.lastNameInput.type(lastName);
+        this.emailInput.type(email);
+        this.passwordInput.type(password);
+        this.confirmPasswordInput.type(password);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationWithoutLastName(firstName, email, password) {
+        this.firstNameInput.type(firstName);
+        this.emailInput.type(email);
+        this.passwordInput.type(password);
+        this.confirmPasswordInput.type(password);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationWithoutEmail(firstName, lastName, password) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.passwordInput.type(password);
+        this.confirmPasswordInput.type(password);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationInvalidEmail(firstName, lastName, email, password) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.emailInput.type(email);
+        this.passwordInput.type(password);
+        this.confirmPasswordInput.type(password);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationWithoutPassword(firstName, lastName, email, confirmPassword) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.emailInput.type(email);
+        this.confirmPasswordInput.type(confirmPassword);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationWithoutConfirmPassword(firstName, lastName, email, password) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.emailInput.type(email);
+        this.passwordInput.type(password);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationPasswordNotMatching(firstName, lastName, email, password, confirmPassword) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.emailInput.type(email);
+        this.passwordInput.type(password);
+        this.confirmPasswordInput.type(confirmPassword);
+        this.markTermsCheckbox();
+        this.clickSubmitButton();
+    }
+
+    userRegistrationTermsNotAccepted(firstName, lastName, email, password) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.emailInput.type(email);
+        this.passwordInput.type(password);
+        this.confirmPasswordInput.type(password);
+        this.clickSubmitButton();
+    }
 }
 
 export const registerPage = new Register();

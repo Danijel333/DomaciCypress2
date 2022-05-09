@@ -1,3 +1,9 @@
 {
-    "baseUrl": "https://gallery-app.vivifyideas.com"
+    "baseUrl": "https://gallery-app.vivifyideas.com",
+    "env": {
+        "LAST_CREATED_GALLERY_TITLE": "",
+        "EXTERNAL_EMAIL": "danijelj@gmail.com",
+        "EXTERNAL_PASSWORD": "ovojesifra33",
+        "LOGIN_URL": "https://gallery-api.vivifyideas.com/api/auth/login"
+    }
 }
